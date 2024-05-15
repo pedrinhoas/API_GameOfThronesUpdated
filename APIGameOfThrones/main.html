@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game of Thrones</title>
+  <link rel="stylesheet" href="main.css" />
+  
+</head>
+
+<body>
+ 
+  <div class="page">
+    <a href = 'index.html><button classs = 'btn-inicio'>Volta ao Inico</button></a>
+    <h1>Game of Thrones </h1>
+    <p><strong>Lembre-se o ID de cada personagem:</strong><br>
+    <div class="item">
+      <div class="item-f"><p>Daenerys Targaryen : 0</p></div>
+      <div class="item-f"><p>Samwell Tarly : 1</p></div>
+      <div class="item-f"><p>Jon Snow : 2</p></div>
+      <div class="item-f"><p>Arya Stark : 3</p></div>
+      <div class="item-f"><p>Sansa Stark : 4</p></div>
+      <div class="item-f"><p>Brandon Stark : 5</p></div>  
+      <div class="item-f"><p>Ned Stark : 6</p></div>
+      <div class="item-f"><p>Robert Baratheon : 7</p></div>
+      <div class="item-f"><p>Jamie Lannister: 8</p></div>
+      <div class="item-f"><p>Cersei Lannister : 9</p></div>
+      <div class="item-f"><p>Catelyn Stark : 10</p></div>
+      <div class="item-f"><p>Rob Stark : 11</p></div>
+      <div class="item-f"><p>Theon Greyjoy : 12</p></div>
+      <div class="item-f"><p>Joffrey Baratheon : 13</p></div>
+      <div class="item-f"><p>Tyrion Lannister : 14</p></div>
+      <div class="item-f"><p>The Hound : 15</p></div>
+      <div class="item-f"><p>Petyr Baelish : 16</p></div>
+      <div class="item-f"><p>Davos Seaworth : 17</p></div>  
+      <div class="item-f"><p>Stannis Baratheon : 18</p></div>
+      <div class="item-f"><p>Varys : 19</p></div>
+      <div class="item-f"><p>Khal Drogo : 20</p></div>
+      <div class="item-f"><p>Margaery Tyrell : 21</p></div>
+      <div class="item-f"><p>Ygritte : 22</p></div>
+      <div class="item-f"><p>Brienne of Tarth : 23</p></div>  
+      <div class="item-f"><p>Missandei : 24</p></div>
+      <div class="item-f"><p>Gilly : 25</p></div>
+      <div class="item-f"><p>Viserys Targaryn : 26</p></div>
+      <div class="item-f"><p>Rickon Stark : 27</p></div>
+      <div class="item-f"><p>Roose Bolton : 28</p></div>
+      <div class="item-f"><p>Daario : 29</p></div>  
+      <div class="item-f"><p>Shae : 30</p></div>
+      <div class="item-f"><p>Tommen Baratheon : 31</p></div>
+      <div class="item-f"><p>Gendry Baratheon : 32</p></div>
+      <div class="item-f"><p>Jorah Mormont : 33</p></div>
+      <div class="item-f"><p>Robert Baratheon :34</p></div>
+      <div class="item-f"><p>Ramsey Bolton : 35</p></div>  
+      <div class="item-f"><p>Talisa Stark : 36</p></div>
+      <div class="item-f"><p>Jeor Mormont : 37</p></div>
+      <div class="item-f"><p>The High Sparrow : 38</p></div>
+      <div class="item-f"><p>Oberyn Martell : 39</p></div>
+      <div class="item-f"><p>Melisandre : 40</p></div>
+      <div class="item-f"><p>Jaqen H'ghar : 41</p></div>  
+      <div class="item-f"><p>Tywin Lannister : 42</p></div>
+      <div class="item-f"><p>Ellaria Sand : 43</p></div>
+      <div class="item-f"><p>Tormund Giantsbane : 44</p></div>
+      <div class="item-f"><p>Yara Greyjoy : 45</p></div>
+      <div class="item-f"><p>Euron Greyjoy : 46</p></div>
+      <div class="item-f"><p>Hodor : 47</p></div>  
+      <div class="item-f"><p>Pycelle : 48</p></div>
+      <div class="item-f"><p>Grey Worm : 49</p></div>
+      <div class="item-f"><p>Olenna Tyrell : 50</p></div>
+      <div class="item-f"><p>Qyburn : 51</p></div>
+      <div class="item-f"><p>Lord Bronn : 52</p></div>  
+    </div>
+  </div>
+  <div>
+    <form method="POST" class="formCreate">
+
+    <label for="name">ID</label>
+    <input type="text" placeholder="Digite o ID" id="ID" required />
+    <input type="submit" value="Enviar" class="btn" />
+    
+    </form>
+  </div>
+  <div class="page">
+    <div class="cardUser">
+      <h1>Informações do Personagem</h1>
+      <div id="userList"></div>
+    </div>
+  </div>
+
+  <script src="api.js"></script>
+</body>
+
+</html>

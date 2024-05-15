@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sobre a Api </title>
+        <link rel="stylesheet" href="end.css">
+    </head>
+
+    <body>
+       
+        <div class="container">
+            <div class="item cabecalho">
+                
+                <h1 class="cab">Sobre a Api utilizada</h1>
+                <a href="index.html"><button class="btnback">Voltar ao inicio</button></a>
+                <p class="api">Utilizamos uma Api bem simples que organiza as informações dos personagens em dicionários,
+                    ela fornece informações sobre os principais personagens da série, assim como suas fotos.
+                    O link para a Api fonte está na pagina inicial, ou rodapé desta página
+                </p>
+            </div>
+            <div class="item menu-lateral">
+                <h1>Integrantes</h1>
+                <h2>Felipe Sequeira Gusmão</h2>
+                <h2>R.A: 2303302-A.D.S</h2>
+                <h2>Gabriel Briotto Monteiro</h2>
+                <h2>R.A: 2303271-S.I</h2>
+                <h2>Pedro Henrique A. S.<h2>
+                <h2>R.A: 2302841-SI</h2>
+
+            </div>
+            <div class="item principal">
+                <h1>Tratamento dos Dados</h1>
+                <p class="tratdados">Nós utilizamos uma função assíncrona unto do comando fetch para fazer uma solicitação HTTP para o endpoint da
+                    Api https://thronesapi.com/api/v2/Characters/${ID}. A solicitação é feita através do Id do personagem.
+                    Se a solicitação for um sucesso, reccebemos os dados que serão convertidos para o formato JSON.
+                    Se houver um erro na resposta (por exemplo, se o ID não existir), um objeto de erro é retornado com uma mensagem.
+                    Se a solicitação falhar por qualquer motivo, ela lança um erro.
+                    Quando recebemos as informações já convertidas, selecionamos aquelas que nos interessam através da notação de ponto '.'
+                    </p>
+                    <p class="tratdados">
+                    Utilizamos função create() que adiciona um ouvinte de evento de envio ao formulário.
+                    Quando o formulário é enviado, ele impede o comportamento padrão (recarregar a página) usando event.preventDefault().
+                    Obtém o valor do campo de entrada de ID.
+                    Verifica se o valor do ID é um número válido entre 0 e 52.
+                    Se o ID for inválido, uma mensagem de erro é exibida no elemento userList.
+                    Se o ID for válido, chama a função fetchCharacterInfo(ID) para obter as informações do personagem.
+                    Se a função fetchCharacterInfo(ID) for bem-sucedida, cria um novo elemento div para exibir as informações do personagem.
+                    Insere as informações do personagem no elemento div criado e o adiciona ao elemento userList.
+                    Se ocorrer um erro durante a solicitação de informações do personagem, exibe uma mensagem de erro no elemento userList
+
+                </p>
+
+            </div>
+            <div class="item rodape"></div>
+            <a href="https://thronesapi.com/swagger/index.html?urls.primaryName=Game%20of%20Thrones%20API%20v2" ><button class="meuBotao">Documentação API</button></a>
+
+          </div>
+        
+       
+    </body>
+
+</html>
